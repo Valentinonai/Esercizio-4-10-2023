@@ -13,14 +13,24 @@ public class Cart {
         this.customer=customer;
     }
 
-    public void addToCart(Product p){
-        for(int i=0;i<product.length;i++){
-            if(product[i]==null){
-                product[i]=new Product(p.getCod(),p.getDescription(),p.getPrice(),p.getNumberOfPieces());
-                break;
+    public void addToCart(Product p, int amount){
+        if(p.getNumberOfPieces()>0){
+            Esterno:
+            for(int i=0;i<product.length;i++){
+                if(product[i]==null){
+                    for(int j=0;(j<amount) && (p.getNumberOfPieces()>0);j++){
+                        product[i+j]=new Product(p.getCod(),p.getDescription(),p.getPrice(),p.getNumberOfPieces());
+                        p.decreaseAmount();
+                        CalcolaTot(p);
+                    }
+                    break Esterno;
+
+                }
             }
+
         }
-        CalcolaTot(p);
+        else System.out.println("Prodotto "+p.getCod()+" esaurito");
+
     }
 
     private void CalcolaTot(Product p){

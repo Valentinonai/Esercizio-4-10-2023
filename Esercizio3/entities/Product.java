@@ -30,6 +30,9 @@ public class Product {
         return numberOfPieces;
     }
 
+    public void decreaseAmount(){
+        this.numberOfPieces--;
+    }
     @Override
     public String toString() {
         return "Product{\n" +

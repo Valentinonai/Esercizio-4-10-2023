@@ -19,6 +19,14 @@ public class Customer {
         this.date=date;
     }
 
-
-
+    @Override
+    public String toString() {
+        return "Customer{\n" +
+                "codCustomer=" + codCustomer +",\n"+
+                "name='" + name + '\'' +",\n"+
+                "lastname='" + lastname + '\'' +",\n"+
+                "email='" + email + '\'' +",\n"+
+                "date='" + date + '\'' +"\n"+
+                '}';
+    }
 }

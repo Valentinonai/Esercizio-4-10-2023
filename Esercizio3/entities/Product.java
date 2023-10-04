@@ -29,4 +29,14 @@ public class Product {
     public int getNumberOfPieces() {
         return numberOfPieces;
     }
+
+    @Override
+    public String toString() {
+        return "Product{\n" +
+                "cod=" + cod +",\n"+
+                "description='" + description + '\'' +",\n"+
+                "price=" + price +",\n"+
+                "numberOfPieces=" + numberOfPieces +"\n"+
+                '}';
+    }
 }

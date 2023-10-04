@@ -22,6 +22,7 @@ public class Main {
         cart1.addToCart(product3,1);
         cart1.addToCart(product4,1);
         cart2.addToCart(product2,9);
+        cart2.addToCart(product1,1);
 
         cart1.printTot();
         cart2.printTot();

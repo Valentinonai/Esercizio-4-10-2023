@@ -11,6 +11,8 @@ public class Main {
         sim1.setCalls(44444,23);
         sim1.setCalls(55555,55444);
         sim1.setCalls(666666,43);
+        sim1.setCalls(777777,43);
+        sim1.setCalls(8888888,43);
         System.out.println(sim1);
 
     }

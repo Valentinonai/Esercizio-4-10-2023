@@ -1,5 +1,7 @@
 package Esercizio3.entities;
 
+import java.time.LocalDate;
+
 public class Customer {
 
     private int codCustomer;
@@ -8,15 +10,14 @@ public class Customer {
 
     private String email;
 
-    private String date;
+    private LocalDate date=LocalDate.now();
 
 
-    public Customer(int codCustomer,String name,String lastname,String email,String date){
+    public Customer(int codCustomer,String name,String lastname,String email){
         this.codCustomer=codCustomer;
         this.name=name;
         this.lastname=lastname;
         this.email=email;
-        this.date=date;
     }
 
     @Override

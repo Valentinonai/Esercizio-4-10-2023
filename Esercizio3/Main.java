@@ -7,8 +7,8 @@ import Esercizio3.entities.Product;
 public class Main {
     public static void main(String[] args) {
 
-        Customer custumer1=new Customer(1,"pippo","rossi","ppppp@ddd.ddd","01-01-01");
-        Customer custumer2=new Customer(2,"pluto","verdi","iiiii@kkkkk.llll","02-02-02");
+        Customer custumer1=new Customer(1,"pippo","rossi","ppppp@ddd.ddd");
+        Customer custumer2=new Customer(2,"pluto","verdi","iiiii@kkkkk.llll");
 
         Product product1=new Product(1,"pppppp",23,10);
         Product product2=new Product(2,"oooooo",50,8);
